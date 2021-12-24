@@ -1,0 +1,89 @@
+#app .activity-item {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 3.5% 10% 3.5% 3.5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+#app .call-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: var(--subtitle);
+    font-size: 17px;
+}
+
+#app .dots {
+    text-align: center;
+    width: 100%;
+    margin: 4% 0%;
+    font-size: smaller;
+    font-weight: bold;
+    color: var(--subtitle);
+}
+
+#app .dots::before {
+    content:"";
+    border-bottom: 0.5px dashed var(--border);
+    min-width: 35%;
+    position: absolute;
+    left: 0;
+    margin-top: 1.5%;
+}
+
+#app .dots::after {
+    content:"";
+    border-bottom: 0.5px dashed var(--border);
+    min-width: 35%;
+    position: absolute;
+    margin-top: 1.5%;
+    right: 0%;
+}
+
+#app .title {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--title);
+}
+
+#app .subtitle {
+    font-size: smaller;
+    color: var(--subtitle);
+    font-weight: 600;
+}
+
+#app .am-pm {
+    position: absolute;
+    right: -1px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 1%;
+    font-size: xx-small;
+    color: var(--subtitle);
+    font-weight: bold;
+}
+
+#app .dots-icon {
+    color: var(--subtitle);
+    margin-right: 4px;
+}
+
+#app .count {
+    background-color: var(--notification);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 8px;
+    color: var(--white);
+    text-align: center;
+}
+
+#app .count-label {
+    font-size: smaller;
+}
